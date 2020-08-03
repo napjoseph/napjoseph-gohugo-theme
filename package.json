@@ -1,17 +1,30 @@
 {
   "name": "napjoseph-gohugo-theme",
-  "version": "0.0.1",
   "description": "A gohugo theme for napjose.ph",
-  "keywords": ["blog"],
-  "license": "MIT",
-  "author": "Nap Joseph Calub",
+  "version": "0.0.1",
+  "keywords": [
+    "gohugo",
+    "theme"
+  ],
   "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "version": "auto-changelog -p --template keepachangelog --commit-limit 0 && git add CHANGELOG.md"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nap Joseph Calub",
+    "email": "hello@napjose.ph",
+    "url": "https://napjose.ph"
+  },
+  "homepage": "https://github.com/napjoseph/napjoseph-gohugo-theme#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/napjoseph/napjoseph-gohugo-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/napjoseph/napjoseph-gohugo-theme/issues"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  }
+    "auto-changelog": "^2.2.0"
+  },
+  "dependencies": {}
 }
