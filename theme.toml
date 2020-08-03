@@ -3,7 +3,7 @@
 
 name = "napjoseph"
 license = "MIT"
-licenselink = "https://github.com/napjoseph/napjoseph-gohugo-theme/blob/master/LICENSE"
+licenselink = "https://github.com/napjoseph/napjoseph-gohugo-theme/blob/master/LICENSE.txt"
 description = "A gohugo theme for napjose.ph"
 homepage = "https://napjose.ph/"
 tags = []
