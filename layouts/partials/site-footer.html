@@ -1,0 +1,3 @@
+<footer>
+  &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} &ndash; {{ now.Format "2006"}}.{{ end }}
+</footer>

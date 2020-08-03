@@ -1,11 +1,43 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<!doctype html>
+<html class="no-js" lang="{{ .Site.LanguageCode | default "en-us"}}">
+<head>
+  <meta charset="utf-8" />
+
+  <title>{{ block "page-title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:title" content="{{ block "meta-title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" href="/images/icon.png" />
+
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <link rel="stylesheet" href="/styles/main.css" />
+
+  <meta name="theme-color" content="#fafafa" />
+</head>
+<body>
+  {{- partial "site-header.html" . -}}
+
+  <main>
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  {{- partial "site-footer.html" . -}}
+
+  <script src="/scripts/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="/scripts/plugins.js"></script>
+  <script src="/scripts/main.js"></script>
+
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga("create", "UA-XXXXX-Y", "auto"); ga("set", "anonymizeIp", true); ga("set", "transport", "beacon"); ga("send", "pageview");
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
 </html>
