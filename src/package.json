@@ -1,0 +1,29 @@
+{
+  "name": "napjoseph-gohugo-theme",
+  "description": "A gohugo theme for napjose.ph",
+  "version": "0.0.1",
+  "keywords": [
+    "gohugo",
+    "theme"
+  ],
+  "main": "./scripts/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nap Joseph Calub",
+    "email": "hello@napjose.ph",
+    "url": "https://napjose.ph"
+  },
+  "homepage": "https://github.com/napjoseph/napjoseph-gohugo-theme#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/napjoseph/napjoseph-gohugo-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/napjoseph/napjoseph-gohugo-theme/issues"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
