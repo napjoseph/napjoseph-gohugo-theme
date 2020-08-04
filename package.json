@@ -6,6 +6,7 @@
     "gohugo",
     "theme"
   ],
+  "private": true,
   "scripts": {
     "version": "auto-changelog -p --template keepachangelog --commit-limit 0 && git add CHANGELOG.md"
   },

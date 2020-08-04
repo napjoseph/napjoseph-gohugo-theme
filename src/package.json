@@ -6,9 +6,14 @@
     "gohugo",
     "theme"
   ],
-  "main": "./scripts/index.ts",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf ../static/scripts ../static/styles",
+    "watch:webpack": "webpack --config webpack.config.js --watch",
+    "watch": "cross-env NODE_ENV=development npm-run-all clean --parallel watch:*",
+    "build:webpack": "webpack --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production npm-run-all clean build:*",
+    "start": "run-s watch"
   },
   "license": "MIT",
   "author": {
@@ -24,6 +29,22 @@
   "bugs": {
     "url": "https://github.com/napjoseph/napjoseph-gohugo-theme/issues"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "assets-webpack-plugin": "^5.0.3",
+    "chokidar": "^3.4.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "normalize-scss": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
   "dependencies": {}
 }
