@@ -26,7 +26,6 @@ module.exports = {
   },
   resolve: {
     modules: [
-      path.resolve(__dirname, 'src'),
       'node_modules',
     ],
   },
@@ -38,7 +37,7 @@ module.exports = {
     new AssetsPlugin({
       path: path.join(__dirname, '../data'),
       filename: 'webpack_assets.json',
-      prettyPrint: true
+      prettyPrint: true,
     }),
     new MiniCssExtractPlugin({
       path: path.resolve(__dirname, './../static'),

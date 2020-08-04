@@ -8,10 +8,10 @@
   ],
   "private": true,
   "scripts": {
-    "clean": "rimraf ../static/scripts ../static/styles",
-    "watch:webpack": "webpack --config webpack.config.js --watch",
+    "clean": "rimraf ../static/scripts ../static/styles ../data/webpack_assets.json",
+    "watch:webpack": "webpack --mode=development --config webpack.config.js --watch",
     "watch": "cross-env NODE_ENV=development npm-run-all clean --parallel watch:*",
-    "build:webpack": "webpack --config webpack.config.js",
+    "build:webpack": "webpack --mode=production --config webpack.config.js",
     "build": "cross-env NODE_ENV=production npm-run-all clean build:*",
     "start": "run-s watch"
   },
