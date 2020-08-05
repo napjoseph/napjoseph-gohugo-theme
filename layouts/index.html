@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<ul>
+{{ $n_posts := .Site.Params.recentPostsToShow | default 3 }}
+{{ $blog_posts := where .Site.RegularPages "Section" "posts" }}
+{{ range (first $n_posts $blog_posts) }}
+  <li>
+    <h4>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h4>
+
+    {{- partial "post-details.html" . -}}
+
+    {{ if .Summary }}
+    <p>{{ .Summary }}</p>
+    {{ end }}
+  </li>
+{{ end }}
+</ul>
+
+{{ end }}

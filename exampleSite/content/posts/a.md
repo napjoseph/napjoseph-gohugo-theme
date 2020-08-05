@@ -5,11 +5,9 @@ date: 2020-01-01T00:00:00+00:00
 tags:
   - tag-1
   - tag-2
-category:
+categories:
   - category-1
 ---
-
-# Quoque hiemalibus sortes
 
 ## Perque Poeantiaden inde
 

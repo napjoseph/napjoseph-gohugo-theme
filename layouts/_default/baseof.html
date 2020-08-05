@@ -16,22 +16,26 @@
   <link rel="apple-touch-icon" href="/images/icon.png" />
 
   {{ with .Site.Data.webpack_assets.app.css }}
-    <link rel="stylesheet" href="{{ relURL (printf "%s" .) }}" />
+    <link rel="stylesheet" href="{{ relURL (printf `%s` .) }}" />
   {{ end }}
 
   <meta name="theme-color" content="#fafafa" />
 </head>
 <body>
-  {{- partial "site-header.html" . -}}
+  {{- partial "header.html" . -}}
+
+  <hr />
 
   <main>
     {{- block "main" . }}{{- end }}
   </main>
 
-  {{- partial "site-footer.html" . -}}
+  <hr />
+
+  {{- partial "footer.html" . -}}
 
   {{ with .Site.Data.webpack_assets.app.js }}
-    <script src="{{ relURL (printf "%s" .) }}"></script>
+    <script src="{{ relURL (printf `%s` .) }}"></script>
   {{ end }}
 
   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}

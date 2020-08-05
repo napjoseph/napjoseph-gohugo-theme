@@ -1,6 +1,7 @@
 ---
-title: "Styles Preview"
+title: "Markdown Test"
 description: "Using sample data from markdown-it.github.io"
+date: 2019-12-31T00:00:00+00:00
 ---
 
 # h1 Heading 8-)
