@@ -8,4 +8,4 @@ googleAnalytics = ""
 
 [params]
   description = "the makers of magic"
-  recentPostsToShow = 5
+  recentPostsToShow = 3
