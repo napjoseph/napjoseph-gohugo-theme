@@ -20,7 +20,7 @@ jobs:
           hugo-version: '0.74.3'
 
       - name: Build
-        run: cd exampleSite && HUGO_ENV=production hugo --minify
+        run: cd exampleSite && HUGO_ENV=production hugo --baseUrl "https://napjose.ph/napjoseph-gohugo-theme" --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

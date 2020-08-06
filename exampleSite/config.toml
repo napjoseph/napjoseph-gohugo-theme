@@ -1,5 +1,5 @@
 title = "fabri de magia"
-baseURL = "https://napjose.ph/napjoseph-gohugo-theme"
+baseURL = "https://example.com"
 languageCode = "en-us"
 theme = "napjoseph-gohugo-theme"
 themesDir = "../.."
