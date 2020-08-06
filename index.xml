@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>fabri de magia</title><link>https://example.com/</link><description>Recent content on fabri de magia</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Styles Preview</title><link>https://example.com/preview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/preview/</guid><description>h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading Horizontal Rules Typographic replacements Enable typographer option to see result.
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+test.. test&amp;hellip; test&amp;hellip;.. test?&amp;hellip;.. test!&amp;hellip;.
+!!!!!! ???? ,, &amp;ndash; &amp;mdash;
+&amp;ldquo;Smartypants, double quotes&amp;rdquo; and &amp;lsquo;single quotes&amp;rsquo;
+Emphasis This is bold text
+This is bold text
+This is italic text
+This is italic text
+Strikethrough
+Blockquotes Blockquotes can also be nested&amp;hellip;</description></item></channel></rss>
