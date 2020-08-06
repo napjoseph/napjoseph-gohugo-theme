@@ -2,7 +2,19 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - command: 'cd exampleSite && hugo server --baseUrl $(gp url 1313) --appendPort=false'
+  - init: |
+      touch /tmp/.npm-lock
+      cd src/
+      npm install
+      rm /tmp/.npm-lock
+    command: |
+      cd src/
+      npm run start
+
+  - init: sleep 1 && while [ -f /tmp/.npm-lock ]; do sleep 1; done
+    command: |
+      cd exampleSite/
+      hugo server --baseUrl $(gp url 1313) --appendPort=false
 
 ports:
   - port: 1313
