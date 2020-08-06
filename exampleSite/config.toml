@@ -1,5 +1,5 @@
 title = "fabri de magia"
-baseURL = "https://example.com"
+baseURL = "https://napjose.ph/napjoseph-gohugo-theme"
 languageCode = "en-us"
 theme = "napjoseph-gohugo-theme"
 themesDir = "../.."
@@ -7,4 +7,5 @@ themesDir = "../.."
 googleAnalytics = ""
 
 [params]
-  description = "Any sufficiently advanced technology is indistinguishable from magic."
+  description = "the makers of magic"
+  recentPostsToShow = 5

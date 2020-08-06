@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+  {{ .Content }}
+
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <h4>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h4>
+
+      {{- partial "post-details.html" . -}}
+
+      {{ if .Summary }}
+      <p>{{ .Summary }}</p>
+      {{ end }}
+    </li>
+    {{ end}}
+  </ul>
+
+{{ end }}
