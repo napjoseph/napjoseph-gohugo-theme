@@ -1,0 +1,12 @@
+{{ if .Site.Params.utterances.repo }}
+<script
+  src="https://utteranc.es/client.js"
+  repo="{{ .Site.Params.utterances.repo }}"
+  issue-term="{{ .Site.Params.utterances.issueTerm | default `pathname` }}"
+  {{ if .Site.Params.utterances.issueNumber }}issue-number="{{ .Site.Params.utterances.issueNumber }}"{{ end }}
+  {{ if .Site.Params.utterances.issueLabel }}label="{{ .Site.Params.utterances.issueLabel }}"{{ end }}
+  theme="{{ .Site.Params.utterances.theme | default `github-light` }}"
+  crossorigin="anonymous"
+  async>
+</script>
+{{ end }}
