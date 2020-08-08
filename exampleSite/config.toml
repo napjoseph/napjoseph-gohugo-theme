@@ -9,3 +9,15 @@ googleAnalytics = ""
 [params]
   description = "the makers of magic"
   recentPostsToShow = 3
+
+[params.utterances]
+  # default: ""
+  repo = "napjoseph/napjoseph-gohugo-theme"
+  # choices: "github-light", "github-dark", "github-dark-orange", "icy-dark", "dark-blue", "photon-dark", "preferred-color-scheme"; default: "github-light"
+  theme = "github-light"
+  # choices: "pathname", "url", "title", "og:title", "[ENTER TERM HERE]"; default: "pathname"
+  issueTerm = "pathname"
+  # you can use this instead of issueTerm
+  issueNumber = ""
+  # default: ""
+  issueLabel = "utterances-comments"

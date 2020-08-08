@@ -1,0 +1,4 @@
+{{ $disableComments := .Params.disableComments | default false }}
+{{ if not $disableComments }}
+  {{- partial "comments-utterances.html" . -}}
+{{ end }}
